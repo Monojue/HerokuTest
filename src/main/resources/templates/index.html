@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+</head>
+<body>
+    <div style="text-align: center;">
+        <form th:action="@{/greeting}" method="post" th:object="${person}">
+            <h1>Enter Your Name</h1>
+            <input type="text" name="name">
+            <input type="submit" value="Enter">
+        </form>
+    </div>
+</body>
+</html>
